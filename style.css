@@ -1,0 +1,119 @@
+html {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+body {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+    min-height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background-image: url('images/bg.png');
+    color: #9f6d03;
+    font-family: courier;
+}
+
+#gameName {
+    display: inline-block;
+    font-size: 35px;
+    font-weight: 400;
+    margin: 40px 30px 40px 5px;
+}
+
+#startBtn {
+    border: none;
+    border-radius: 6px;
+    color: white;
+    background-color: #4CAF50;
+    padding: 15px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px 4px 45px;
+    cursor: pointer;
+}
+#startBtn:hover {
+    background-color: rgb(60, 143, 60);
+}
+
+#field {
+    padding: 20px;
+    line-height: 0;
+    min-width: 500px;
+
+    animation: fadeIn 4s;
+    -webkit-animation: fadeIn 4s;
+    -moz-animation: fadeIn 4s ;
+    -o-animation: fadeIn 4s ;
+    -ms-animation: fadeIn 4s ;
+
+    animation-timing-function: cubic-bezier(1,0,0.58,1);
+}
+
+#statsTxt {
+    font-size: 24px;
+    margin-left: 40px;
+}
+
+#statsField {
+    width: 460px;
+    height: 50px;
+    background-color: #f8f8ff78;
+    margin-left: 0;
+    margin-top: 20px;
+    border-radius: 8px;
+    padding: 20px;
+    display: none;
+
+    animation: fadeIn 3s;
+    -webkit-animation: fadeIn 3s;
+    -moz-animation: fadeIn 3s ;
+    -o-animation: fadeIn 3s ;
+    -ms-animation: fadeIn 3s ;
+  
+    animation-timing-function: cubic-bezier(1,0,0.58,1);
+}
+
+#boss, #skeleton1, #skeleton2, #skeleton3, #skeleton4, #skeleton5 {
+    display: none;
+}
+
+
+@keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+  }
+  
+  @-moz-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+  }
+  
+  @-webkit-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+  }
+  
+  @-o-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+  }
+  
+  @-ms-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+  }
+
+  /* @media screen and (max-width: 1400px) {
+    #field {
+        transform: scale(0.7,0.7);
+    }
+  } */

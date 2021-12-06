@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preload" href="images/floor.png" as="image">
+    <link rel="preload" href="images/wall.png" as="image">
+    <link rel="preload" href="images/hero-down.png" as="image">
+    <link rel="preload" href="images/hero-right.png" as="image">
+    <link rel="preload" href="images/skeleton.png" as="image">
+    <link rel="preload" href="images/boss.png" as="image">
+    <title>Wanderer</title>
+</head>
+<body>
+    <div id="sideData">
+        <div id="gameName">Wanderer game</div>
+        <button id="startBtn" type="button">START</button>
+        <div id="statsTxt">Statistics:</div>
+        <div id="statsField">
+            <div id="hero">
+                Hero&nbsp&nbsp&nbsp&nbsp&nbsp(Level <span id="heroLevel">1</span> 
+                HP: <span id="heroHP">8</span>
+                /
+                <span id="heroMaxHP">10</span> 
+                | 
+                DP: <span id="heroDP">8</span>8 
+                | 
+                SP: <span id="heroSP">6</span>
+                )
+            </div>
+            <div id="skeleton1">
+                Skeleton (Level <span id="skeleton1Level">1</span> 
+                HP: <span id="skeleton1HP">8</span>
+                /
+                <span id="skeleton1MaxHP">10</span> 
+                | 
+                DP: <span id="skeleton1DP">8</span>8 
+                | 
+                SP: <span id="skeleton1SP">6</span>
+                )
+            </div>
+            <div id="skeleton2">
+                Skeleton (Level <span id="skeleton2Level">1</span> 
+                HP: <span id="skeleton2HP">8</span>
+                /
+                <span id="skeleton2MaxHP">10</span> 
+                | 
+                DP: <span id="skeleton2DP">8</span>8 
+                | 
+                SP: <span id="skeleton2SP">6</span>
+                )
+            </div>
+            <div id="skeleton3">
+                Skeleton (Level <span id="skeleton3Level">1</span> 
+                HP: <span id="skeleton3HP">8</span>
+                /
+                <span id="skeleton3MaxHP">10</span> 
+                | 
+                DP: <span id="skeleton3DP">8</span>8 
+                | 
+                SP: <span id="skeleton3SP">6</span>
+                )
+            </div>
+            <div id="skeleton4">
+                Skeleton (Level <span id="skeleton4Level">1</span> 
+                HP: <span id="skeleton4HP">8</span>
+                /
+                <span id="skeleton4MaxHP">10</span> 
+                | 
+                DP: <span id="skeleton4DP">8</span>8 
+                | 
+                SP: <span id="skeleton4SP">6</span>
+                )
+            </div>
+            <div id="skeleton5">
+                Skeleton (Level <span id="skeleton5Level">1</span> 
+                HP: <span id="skeleton5HP">8</span>
+                /
+                <span id="skeleton5MaxHP">10</span> 
+                | 
+                DP: <span id="skeleton5DP">8</span>8 
+                | 
+                SP: <span id="skeleton5SP">6</span>
+                )
+            </div>
+            <div id="boss">
+                Boss&nbsp&nbsp&nbsp&nbsp&nbsp(Level <span id="bossLevel">1</span> 
+                HP: <span id="bossHP">8</span>
+                /
+                <span id="bossMaxHP">10</span> 
+                | 
+                DP: <span id="bossDP">8</span>8 
+                | 
+                SP: <span id="bossSP">6</span>
+                )
+            </div>
+        </div>
+    </div>
+    <div id="field"></div>
+    <script src="./wanderer.js"></script>
+</body>
+</html>
